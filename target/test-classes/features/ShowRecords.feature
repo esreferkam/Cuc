@@ -16,7 +16,7 @@ Feature: Show records functionality
       | 200 |
       | 500 |
 
-  Scenario: Change number of rows in Users page
+  Scenario: Change number of rows in Users pagew
     And I click on "Users" link
     When I select Show 50 records
     Then users table must display 50 records
