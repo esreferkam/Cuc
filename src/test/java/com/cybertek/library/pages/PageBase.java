@@ -18,4 +18,6 @@ public abstract class PageBase {
     public WebElement books;
     @FindBy(tagName = "h3")
     public WebElement pageHeader;
+    @FindBy(css = "#navbarDropdown>span")
+    public WebElement accountHolderName;
 }
