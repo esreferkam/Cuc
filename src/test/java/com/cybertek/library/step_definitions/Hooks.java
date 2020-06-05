@@ -1,10 +1,9 @@
 package com.cybertek.library.step_definitions;
 
 import com.cybertek.library.utilities.Driver;
-import io.cucumber.java.After;
-import io.cucumber.java.AfterStep;
-import io.cucumber.java.Before;
-import io.cucumber.java.BeforeStep;
+import io.cucumber.java.*;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 
 
 import java.util.concurrent.TimeUnit;
@@ -23,7 +22,20 @@ public class Hooks {
         System.out.println("connecting to db");
     }
     @After(order = 0)
-    public void tearDownScenario(){
+    public void tearDownScenario(Scenario scenario){
+        System.out.println("scenario.getSourceTagNames() = " + scenario.getSourceTagNames());
+        System.out.println("scenario.getName() = " + scenario.getName());
+        scenario.write("Complete scenario: " + scenario.getName());
+
+        if (scenario.isFailed()) {
+            // take screenshot using selenium
+            byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
+            // attach to report
+            scenario.embed(screenshot, "image/png", scenario.getName());
+        }
+
+
+        System.out.println("close driver");
         Driver.closeDriver();
     }
     @After(value = "@db", order = 1)

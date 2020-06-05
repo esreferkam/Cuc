@@ -51,7 +51,7 @@ Feature: User account tests
       | student43@library   | 7F1rV4W8 | Test Student 43   |
       | student44@library   | BIXPElK5 | Test Student 44   |
 
-@wip
+
   Scenario Template: Another verify user information <name>
     Given I am on the login page
     When I login using following credentials:

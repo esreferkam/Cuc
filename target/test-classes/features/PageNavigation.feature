@@ -10,10 +10,10 @@ Feature: Page navigation links
   Background:
     Given I am on the login page
     And I login as a librarian
-@db
+@db @wip
   Scenario: Go to users page
   When I click on "Users" link
-  Then "Users" page should be displayed
+  Then "UsersAD" page should be displayed
 
 Scenario: Go to books page
   When I click on "Books" link
