@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: Page navigation links
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.33 s <<< FAILURE! - in Page navigation links
+Page navigation links.Go to users page  Time elapsed: 6.33 s  <<< FAILURE!
+java.lang.AssertionError
+

@@ -1,0 +1,120 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-12T16:16:05.232Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1909285000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.library.step_definitions.Hooks.setUpScenario()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Verify search results",
+        "description": "",
+        "id": "books-table;verify-search-results",
+        "after": [
+          {
+            "output": [
+              "Complete scenario: Verify search results"
+            ],
+            "result": {
+              "duration": 101850000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.library.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1309579000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on the login page",
+            "match": {
+              "location": "com.cybertek.library.step_definitions.LoginStepDefs.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 288341000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I login to application as a student",
+            "match": {
+              "arguments": [
+                {
+                  "val": "student",
+                  "offset": 28
+                }
+              ],
+              "location": "com.cybertek.library.step_definitions.LoginStepDefs.i_login_to_application_as_a(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 414130000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I navigate to \"Books\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Books\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.cybertek.library.step_definitions.PageNavigationStepDefs.i_go_to_page(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1143782000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I search for \"The Goldfinch\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"The Goldfinch\"",
+                  "offset": 13
+                }
+              ],
+              "location": "com.cybertek.library.step_definitions.UsersTableStepDefs.i_search_for(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "books table",
+    "description": "",
+    "id": "books-table",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/BooksTable.feature",
+    "tags": []
+  }
+]

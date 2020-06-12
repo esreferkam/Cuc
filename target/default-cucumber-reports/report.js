@@ -1,16 +1,18 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/PageNavigation.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/BooksTable.feature");
 formatter.feature({
-  "name": "Page navigation links",
+  "name": "books table",
   "description": "",
   "keyword": "Feature"
 });
-formatter.background({
-  "name": "",
+formatter.scenario({
+  "name": "Verify search results",
   "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@wip"
+    }
+  ]
 });
 formatter.before({
   "status": "passed"
@@ -26,54 +28,36 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I login as a librarian",
+  "name": "I login to application as a student",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.cybertek.library.step_definitions.LoginStepDefs.i_login_as_a_librarian()"
+  "location": "com.cybertek.library.step_definitions.LoginStepDefs.i_login_to_application_as_a(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
-formatter.scenario({
-  "name": "Go to users page",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@db"
-    },
-    {
-      "name": "@wip"
-    }
-  ]
-});
 formatter.step({
-  "name": "I click on \"Users\" link",
+  "name": "I navigate to \"Books\" page",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.cybertek.library.step_definitions.PageNavigationStepDefs.i_click_on_link(java.lang.String)"
+  "location": "com.cybertek.library.step_definitions.PageNavigationStepDefs.i_go_to_page(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "\"UsersAD\" page should be displayed",
-  "keyword": "Then "
+  "name": "I search for \"The Goldfinch\"",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "com.cybertek.library.step_definitions.PageNavigationStepDefs.page_should_be_displayed(java.lang.String)"
+  "location": "com.cybertek.library.step_definitions.UsersTableStepDefs.i_search_for(java.lang.String)"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:87)\n\tat org.junit.Assert.assertTrue(Assert.java:42)\n\tat org.junit.Assert.assertTrue(Assert.java:53)\n\tat com.cybertek.library.step_definitions.PageNavigationStepDefs.page_should_be_displayed(PageNavigationStepDefs.java:40)\n\tat ✽.\"UsersAD\" page should be displayed(file:///Users/esreferkam/IdeaProjects/cucumber-personal/src/test/resources/features/PageNavigation.feature:16)\n",
-  "status": "failed"
-});
-formatter.after({
   "status": "passed"
 });
-formatter.write("Complete scenario: Go to users page");
-formatter.embedding("image/png", "embedded0.png", "Go to users page");
+formatter.write("Complete scenario: Verify search results");
 formatter.after({
   "status": "passed"
 });
