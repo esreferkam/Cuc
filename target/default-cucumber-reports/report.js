@@ -5,12 +5,12 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Verify search results",
+  "name": "Verify book information",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@wip"
+      "name": "@run"
     }
   ]
 });
@@ -28,7 +28,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I login to application as a student",
+  "name": "I login to application as a librarian",
   "keyword": "And "
 });
 formatter.match({
@@ -38,8 +38,8 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I navigate to \"Books\" page",
-  "keyword": "When "
+  "name": "I go to \"Books\" page",
+  "keyword": "And "
 });
 formatter.match({
   "location": "com.cybertek.library.step_definitions.PageNavigationStepDefs.i_go_to_page(java.lang.String)"
@@ -48,16 +48,30 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I search for \"The Goldfinch\"",
-  "keyword": "And "
+  "name": "I edit book The kiterunner",
+  "keyword": "When "
 });
 formatter.match({
-  "location": "com.cybertek.library.step_definitions.UsersTableStepDefs.i_search_for(java.lang.String)"
+  "location": "com.cybertek.library.step_definitions.BooksTableStepDefinitions.i_edit_book_The_kiterunner(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
-formatter.write("Complete scenario: Verify search results");
+formatter.step({
+  "name": "I verify book information",
+  "rows": [
+    {},
+    {}
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.cybertek.library.step_definitions.BooksTableStepDefinitions.i_verify_book_information(com.cybertek.library.pojos.Book)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.write("Complete scenario: Verify book information");
 formatter.after({
   "status": "passed"
 });

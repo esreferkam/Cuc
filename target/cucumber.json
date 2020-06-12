@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-06-12T16:16:05.232Z",
+        "start_timestamp": "2020-06-12T22:48:00.301Z",
         "before": [
           {
             "result": {
-              "duration": 1909285000,
+              "duration": 1341120000,
               "status": "passed"
             },
             "match": {
@@ -15,17 +15,17 @@
             }
           }
         ],
-        "line": 5,
-        "name": "Verify search results",
+        "line": 13,
+        "name": "Verify book information",
         "description": "",
-        "id": "books-table;verify-search-results",
+        "id": "books-table;verify-book-information",
         "after": [
           {
             "output": [
-              "Complete scenario: Verify search results"
+              "Complete scenario: Verify book information"
             ],
             "result": {
-              "duration": 101850000,
+              "duration": 77462000,
               "status": "passed"
             },
             "match": {
@@ -38,10 +38,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1309579000,
+              "duration": 490334000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 14,
             "name": "I am on the login page",
             "match": {
               "location": "com.cybertek.library.step_definitions.LoginStepDefs.i_am_on_the_login_page()"
@@ -50,15 +50,15 @@
           },
           {
             "result": {
-              "duration": 288341000,
+              "duration": 258075000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "I login to application as a student",
+            "line": 15,
+            "name": "I login to application as a librarian",
             "match": {
               "arguments": [
                 {
-                  "val": "student",
+                  "val": "librarian",
                   "offset": 28
                 }
               ],
@@ -68,44 +68,72 @@
           },
           {
             "result": {
-              "duration": 414130000,
+              "duration": 197552000,
               "status": "passed"
             },
-            "line": 8,
-            "name": "I navigate to \"Books\" page",
+            "line": 16,
+            "name": "I go to \"Books\" page",
             "match": {
               "arguments": [
                 {
                   "val": "\"Books\"",
-                  "offset": 14
+                  "offset": 8
                 }
               ],
               "location": "com.cybertek.library.step_definitions.PageNavigationStepDefs.i_go_to_page(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 301399000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I edit book The kiterunner",
+            "match": {
+              "arguments": [
+                {
+                  "val": "The kiterunner",
+                  "offset": 12
+                }
+              ],
+              "location": "com.cybertek.library.step_definitions.BooksTableStepDefinitions.i_edit_book_The_kiterunner(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1143782000,
+              "duration": 9257000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "I search for \"The Goldfinch\"",
+            "line": 18,
+            "name": "I verify book information",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"The Goldfinch\"",
-                  "offset": 13
-                }
-              ],
-              "location": "com.cybertek.library.step_definitions.UsersTableStepDefs.i_search_for(java.lang.String)"
+              "location": "com.cybertek.library.step_definitions.BooksTableStepDefinitions.i_verify_book_information(com.cybertek.library.pojos.Book)"
             },
-            "keyword": "And "
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "author",
+                  "year"
+                ]
+              },
+              {
+                "cells": [
+                  "The kite runner",
+                  "Khaled Hosseini",
+                  "2003"
+                ]
+              }
+            ],
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@wip"
+            "name": "@run"
           }
         ]
       }
