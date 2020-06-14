@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-06-12T22:48:00.301Z",
+        "start_timestamp": "2020-06-13T21:50:44.206Z",
         "before": [
           {
             "result": {
-              "duration": 1341120000,
+              "duration": 2648318000,
               "status": "passed"
             },
             "match": {
@@ -25,7 +25,7 @@
               "Complete scenario: Verify book information"
             ],
             "result": {
-              "duration": 77462000,
+              "duration": 90124000,
               "status": "passed"
             },
             "match": {
@@ -38,7 +38,7 @@
         "steps": [
           {
             "result": {
-              "duration": 490334000,
+              "duration": 1361958000,
               "status": "passed"
             },
             "line": 14,
@@ -50,7 +50,7 @@
           },
           {
             "result": {
-              "duration": 258075000,
+              "duration": 288220000,
               "status": "passed"
             },
             "line": 15,
@@ -68,7 +68,7 @@
           },
           {
             "result": {
-              "duration": 197552000,
+              "duration": 334113000,
               "status": "passed"
             },
             "line": 16,
@@ -86,7 +86,7 @@
           },
           {
             "result": {
-              "duration": 301399000,
+              "duration": 339936000,
               "status": "passed"
             },
             "line": 17,
@@ -104,7 +104,7 @@
           },
           {
             "result": {
-              "duration": 9257000,
+              "duration": 130359000,
               "status": "passed"
             },
             "line": 18,
@@ -122,9 +122,9 @@
               },
               {
                 "cells": [
-                  "The kite runner",
-                  "Khaled Hosseini",
-                  "2003"
+                  "Eira barbata",
+                  "Rex Frisby",
+                  "1238454566"
                 ]
               }
             ],

@@ -12,6 +12,7 @@ import org.openqa.selenium.By;
 import java.util.List;
 import java.util.Map;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class BooksTableStepDefinitions {
@@ -48,9 +49,17 @@ public class BooksTableStepDefinitions {
     @Then("I verify book information")
     public void i_verify_book_information(Book book) {
         System.out.println(book);
-        System.out.println("book.getName() = " + book.getName());
-        System.out.println("book.getAuthor() = " + book.getAuthor());
-        System.out.println("book.getYear() = " + book.getYear());
+
+        assertEquals("Book name did not match",
+                book.getName(), booksPage.bookName.getAttribute("value"));
+        assertEquals("Author did not match",
+                book.getAuthor(), booksPage.author.getAttribute("value"));
+        assertEquals("Year did not match",
+                book.getYear(), booksPage.year.getAttribute("value"));
+
+
+
+
 
 
     }

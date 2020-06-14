@@ -17,7 +17,8 @@ Feature: books table
     When I edit book The kiterunner
     Then I verify book information
     | name | author | year |
-    | The kite runner | Khaled Hosseini | 2003|
+  | 	Eira barbata | Rex Frisby| 1238454566|
+
 
 
 
