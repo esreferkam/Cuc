@@ -1,0 +1,698 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-15T19:30:55.133Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1385124000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.library.step_definitions.Hooks.setUpScenario()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Login as a librarian",
+        "description": "",
+        "id": "login;login-as-a-librarian",
+        "after": [
+          {
+            "output": [
+              "Complete scenario: Login as a librarian"
+            ],
+            "result": {
+              "duration": 75280000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.library.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 916554000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am on the login page",
+            "match": {
+              "location": "com.cybertek.library.step_definitions.LoginStepDefs.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 262821000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I login as a librarian",
+            "match": {
+              "location": "com.cybertek.library.step_definitions.LoginStepDefs.i_login_as_a_librarian()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 526000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "dashboard should be displayed",
+            "match": {
+              "location": "com.cybertek.library.step_definitions.LoginStepDefs.dashboard_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@lib-100"
+          },
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@librarian"
+          },
+          {
+            "name": "@staff"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-15T19:30:57.842Z",
+        "before": [
+          {
+            "result": {
+              "duration": 387356000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.library.step_definitions.Hooks.setUpScenario()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Login as a student",
+        "description": "",
+        "id": "login;login-as-a-student",
+        "after": [
+          {
+            "output": [
+              "Complete scenario: Login as a student"
+            ],
+            "result": {
+              "duration": 85378000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.library.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 945289000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I am on the login page",
+            "match": {
+              "location": "com.cybertek.library.step_definitions.LoginStepDefs.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 666000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I login as a student",
+            "match": {
+              "location": "com.cybertek.library.step_definitions.LoginStepDefs.i_login_as_a_student()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 621000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "dashboard should be displayed",
+            "match": {
+              "location": "com.cybertek.library.step_definitions.LoginStepDefs.dashboard_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@lib-100"
+          },
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@student"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-15T19:30:59.279Z",
+        "before": [
+          {
+            "result": {
+              "duration": 377799000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.library.step_definitions.Hooks.setUpScenario()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Login as a admin",
+        "description": "",
+        "id": "login;login-as-a-admin",
+        "after": [
+          {
+            "output": [
+              "Complete scenario: Login as a admin"
+            ],
+            "result": {
+              "duration": 89578000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.library.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 939544000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I am on the login page",
+            "match": {
+              "location": "com.cybertek.library.step_definitions.LoginStepDefs.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 410000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I login as an admin",
+            "match": {
+              "location": "com.cybertek.library.step_definitions.LoginStepDefs.i_login_as_an_admin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 369000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "dashboard should be displayed",
+            "match": {
+              "location": "com.cybertek.library.step_definitions.LoginStepDefs.dashboard_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@lib-100"
+          },
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@admin"
+          },
+          {
+            "name": "@staff"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "  As I user, I should be able to login",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@lib-100",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 8
+        }
+      },
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 17
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-15T19:31:00.700Z",
+        "before": [
+          {
+            "result": {
+              "duration": 401920000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.library.step_definitions.Hooks.setUpScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 147000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.library.step_definitions.Hooks.connect()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Go to users page",
+        "description": "",
+        "id": "page-navigation-links;go-to-users-page",
+        "after": [
+          {
+            "result": {
+              "duration": 77000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.library.step_definitions.Hooks.closeConnection()"
+            }
+          },
+          {
+            "output": [
+              "Complete scenario: Go to users page"
+            ],
+            "result": {
+              "duration": 87964000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.library.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 940463000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on the login page",
+            "match": {
+              "location": "com.cybertek.library.step_definitions.LoginStepDefs.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 238586000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I login as a librarian",
+            "match": {
+              "location": "com.cybertek.library.step_definitions.LoginStepDefs.i_login_as_a_librarian()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 296892000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on \"Users\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Users\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.cybertek.library.step_definitions.PageNavigationStepDefs.i_click_on_link(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1046737000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "\"Users\" page should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Users\"",
+                  "offset": 0
+                }
+              ],
+              "location": "com.cybertek.library.step_definitions.PageNavigationStepDefs.page_should_be_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@lib-132"
+          },
+          {
+            "name": "@navigation"
+          },
+          {
+            "name": "@db"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-15T19:31:03.736Z",
+        "before": [
+          {
+            "result": {
+              "duration": 367254000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.library.step_definitions.Hooks.setUpScenario()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Go to books page",
+        "description": "",
+        "id": "page-navigation-links;go-to-books-page",
+        "after": [
+          {
+            "output": [
+              "Complete scenario: Go to books page"
+            ],
+            "result": {
+              "duration": 87503000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.library.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 972302000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I am on the login page",
+            "match": {
+              "location": "com.cybertek.library.step_definitions.LoginStepDefs.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 249133000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I login as a librarian",
+            "match": {
+              "location": "com.cybertek.library.step_definitions.LoginStepDefs.i_login_as_a_librarian()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1342251000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I click on \"Books\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Books\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.cybertek.library.step_definitions.PageNavigationStepDefs.i_click_on_link(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1025513000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "\"Books\" page should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Books\"",
+                  "offset": 0
+                }
+              ],
+              "location": "com.cybertek.library.step_definitions.PageNavigationStepDefs.page_should_be_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@lib-132"
+          },
+          {
+            "name": "@navigation"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-15T19:31:07.791Z",
+        "before": [
+          {
+            "result": {
+              "duration": 407543000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.library.step_definitions.Hooks.setUpScenario()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Go to dashboard page",
+        "description": "",
+        "id": "page-navigation-links;go-to-dashboard-page",
+        "after": [
+          {
+            "output": [
+              "Complete scenario: Go to dashboard page"
+            ],
+            "result": {
+              "duration": 86029000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.library.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 928735000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I am on the login page",
+            "match": {
+              "location": "com.cybertek.library.step_definitions.LoginStepDefs.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 239040000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I login as a librarian",
+            "match": {
+              "location": "com.cybertek.library.step_definitions.LoginStepDefs.i_login_as_a_librarian()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 287325000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I click on \"Books\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Books\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.cybertek.library.step_definitions.PageNavigationStepDefs.i_click_on_link(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 117197000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I click on \"Dashboard\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dashboard\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.cybertek.library.step_definitions.PageNavigationStepDefs.i_click_on_link(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1010403000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "\"Dashboard\" page should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dashboard\"",
+                  "offset": 0
+                }
+              ],
+              "location": "com.cybertek.library.step_definitions.PageNavigationStepDefs.page_should_be_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@lib-132"
+          },
+          {
+            "name": "@navigation"
+          }
+        ]
+      }
+    ],
+    "name": "Page navigation links",
+    "description": "",
+    "id": "page-navigation-links",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/PageNavigation2.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@lib-132",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 8
+        }
+      },
+      {
+        "name": "@navigation",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 17
+        }
+      }
+    ]
+  }
+]

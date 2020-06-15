@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: Search functionality on the users page
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 10.038 s <<< FAILURE! - in Search functionality on the users page
+Search functionality on the users page.Search accuracy  Time elapsed: 8.403 s  <<< FAILURE!
+java.lang.AssertionError: Expected string was not found in table: tests
+
